@@ -5,5 +5,9 @@ public class Main {
         myVariable ++;
         myVariable --;
 
+        System.out.println ("This is a test +" +
+                "sw" +
+                "ew" +
+                "dewdw");
     }
 }
