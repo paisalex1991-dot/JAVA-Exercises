@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/KeywordAndExpresions.iml" filepath="$PROJECT_DIR$/KeywordAndExpresions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StatementsWhitesSpacesAndIndenting.iml" filepath="$PROJECT_DIR$/StatementsWhitesSpacesAndIndenting.iml" />
     </modules>
   </component>
 </project>
