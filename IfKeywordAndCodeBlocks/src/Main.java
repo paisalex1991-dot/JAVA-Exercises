@@ -1,35 +1,27 @@
-public class SpeedConverter {
-    public static int toMilesPerHour (double KilometersPerHour){
+public class Main {
+    public static void main(String[] args) {
 
-        long status;
+        boolean gameOver = true;
+        int score = 5000;
+        int levelComplete =5;
+        int bonus = 100;
 
-        if(KilometersPerHour < 0)
+        if (score < 5000 && score > 1000)
         {
-            status = -1;
+            System.out.println("Your score was less than 5000");
+        }
+        else if (score < 1000)
+        {
+            System.out.println("Your score is less than 1000");
         }
         else
         {
-            status = Math.round(KilometersPerHour * 0.621371192);
+            System.out.println("Got here");
         }
 
-        return (int) status;
+
     }
 
 
-    public static void printConversion (double kilometersPerHour){
-
-        long milesPerHour;
-
-        milesPerHour = Math.round(kilometersPerHour * 0.621371192);
-
-        if (kilometersPerHour >= 0)
-        {
-            System.out.print (kilometersPerHour + " km/h = " + milesPerHour + " mi/h");
-        }
-        else
-        {
-            System.out.print ("Invalid Value");
-        }
-    }
 }
 
