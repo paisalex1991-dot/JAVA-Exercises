@@ -8,12 +8,23 @@ public class MainChallenge {
 
         int finalScore = score;
 
-        if (gameOver == true)
+        if (gameOver)
         {
             finalScore += (levelComplete *bonus);
             System.out.println("Your final score was " + finalScore);
         }
 
+        finalScore = 0;
+        score = 10000;
+        levelComplete = 8;
+        bonus = 200;
+        finalScore = score;
+
+        if (gameOver)
+        {
+            finalScore += (levelComplete * bonus);
+            System.out.println("Your final score was " + finalScore);
+        }
 
 
 
