@@ -16,5 +16,20 @@ public class Main {
 
 
         }
+        String month = "May";
+        System.out.println(month + " is in the " + qetQuater(month) + " quater");
+
+    }
+
+    public static String qetQuater(String month){
+
+        return switch (month) {
+            case "January", "February", "March" -> "1";
+            case "April", "May", "June" -> "2";
+            case "July", "August", "September" -> "3";
+            case "October", "November", "December" -> "4";
+            default -> "bad";
+        };
+
     }
 }
