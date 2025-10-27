@@ -37,7 +37,6 @@ public class Dog extends AnimalGeneric{
 
     }
 
-    @Override
     public void move(String speed) {
         super.move(speed);
         //System.out.println("Dogs walk, run and wag their tail");

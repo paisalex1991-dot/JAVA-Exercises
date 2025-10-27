@@ -19,7 +19,7 @@ public class Fish extends AnimalGeneric{
     public static void fortest(){
         System.out.println("This method comes from a child class");
     }
-
+/*
     @Override
     public void move(String speed) {
         super.move(speed);
@@ -29,7 +29,7 @@ public class Fish extends AnimalGeneric{
         }
         System.out.println();
     }
-
+*/
     @Override
     public String toString() {
         return "Fish{" +
