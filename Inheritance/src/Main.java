@@ -14,6 +14,12 @@ public class Main {
         Dog retreiver = new Dog("Labrador retreiver", 65, "Floppy", "Swimmer");
         doAnimalStuff(retreiver, "Slow");
 
+        Dog wolf = new Dog("Wolf", 40);
+        doAnimalStuff(wolf, "slow");
+
+        Fish goldie = new Fish("Goldfish", 0.25, 2, 3);
+        doAnimalStuff(goldie, "fast");
+
 
     }
 
@@ -23,5 +29,6 @@ public class Main {
         animal.move(speed);
         System.out.println(animal);
         System.out.println("__________");
+        Fish.fortest();
     }
 }

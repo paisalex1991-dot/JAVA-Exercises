@@ -1,6 +1,6 @@
 public class AnimalGeneric {
 
-    private String type;
+    protected String type;
     private String size;
     private double weight;
 
@@ -28,4 +28,5 @@ public class AnimalGeneric {
     public void makeNoise(){
         System.out.println(type + " makes some noise");
     }
+
 }
