@@ -9,12 +9,16 @@ public class Main {
         System.out.println("Age equals: " + tim.getAge());
         System.out.println("Pay is: "+ tim.collectPay());
 
-        Employee joe = new Employee("Joe","1999",  "2021");
+        SalariedEmployee joe = new SalariedEmployee("Joe","1999",  "2021", 35000);
 
         System.out.println(joe);
-        System.out.println("Age equals: " + joe.getAge());
-        System.out.println("Pay is: "+ joe.collectPay());
+        //System.out.println("Age equals: " + joe.getAge());
+        System.out.println("Joe's Pay is: "+ joe.collectPay());
 
-  ;
+        HourlyEmployee alex = new HourlyEmployee("alex", "1975", "2020", 9.90);
+        System.out.println(alex);
+        System.out.println(alex.getName() + "'s salaries is :" +alex.getDoublePay(10));
+
+
     }
 }
