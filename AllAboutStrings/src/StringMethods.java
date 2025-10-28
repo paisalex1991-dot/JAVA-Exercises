@@ -10,6 +10,14 @@ public class StringMethods {
 
         String newDate = String.join("-","12", "12", "1990");// 12/12/1990
         System.out.println(newDate);
+        System.out.println(newDate.replace('-', '/')); //replace all '-' with '/'
+
+        System.out.println("ABC\n".repeat(3)); //repeats print for times
+        System.out.println("-".repeat(20));
+
+
+        System.out.println("ABC\n".repeat(3).indent(8)); //repeats print for times 3 times and adds 8 white spaces at the start
+        System.out.println("-".repeat(20));
 
     }
 }
