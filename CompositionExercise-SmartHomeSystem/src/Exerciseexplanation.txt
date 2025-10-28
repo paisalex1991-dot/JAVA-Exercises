@@ -1,0 +1,62 @@
+🏠 Instructions
+
+1️⃣ Create a base class called Appliance
+
+Fields:
+
+String brand
+
+boolean isOn
+
+Methods:
+
+void turnOn() — sets isOn = true and prints a message.
+
+void turnOff() — sets isOn = false and prints a message.
+
+2️⃣ Create two subclasses that inherit from Appliance:
+
+Light
+
+Additional field: int brightnessLevel
+
+Additional method: void dim(int level) — sets a new brightness level.
+
+Thermostat
+
+Additional field: double temperature
+
+Additional method: void setTemperature(double temp)
+
+Each subclass should override the turnOn() method to print its own custom message.
+
+3️⃣ Create a class called SmartHub
+
+The SmartHub has a list of appliances (→ composition).
+
+ArrayList<Appliance> devices;
+
+
+Methods:
+
+void addDevice(Appliance device)
+
+void turnAllOn()
+
+void turnAllOff()
+
+4️⃣ In your Main class:
+
+Create a SmartHub.
+
+Create at least one Light and one Thermostat.
+
+Add them to the hub.
+
+Call methods to:
+
+Turn all devices on.
+
+Adjust brightness and temperature.
+
+Turn all devices off.
