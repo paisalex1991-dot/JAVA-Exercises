@@ -14,14 +14,14 @@ public class Sides extends MealOrder{
 
     public double getSidesTotalPrice(String burgerType){
 
-        if((burgerType == "DELUXE") || (burgerType == "BASIC")){
+        if((burgerType.contains("DELUXE")) || (burgerType.contains("BASIC"))){
 
             System.out.println("Sides : 0.00$");
             return 00.00;
         }
         else  {
             this.price = prices.priceSelect(this.type+this.size);
-            System.out.println("Sides:  " + this.type + " size " + this.size + "--->" + this.price + "$");
+            System.out.println("Sides:  " + this.type + " size " + this.size + " ---> " + this.price + "$");
             return this.price;
         }
     }

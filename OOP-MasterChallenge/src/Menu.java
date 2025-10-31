@@ -46,6 +46,7 @@ public class Menu {
                Step 4-> Select side size: SMALL / MEDIUM / LARGE
                Step 5-> Select Drinks: COLA / PEPSI / MIRINDA
                Step 6-> Select drink size: SMALL / MEDIUM 
+               
                To skip a choice press ENTER
                
                Q -> to exit
@@ -54,38 +55,38 @@ public class Menu {
 
     }
 
-    public void selectBurger(){
-        System.out.println("""
+    public String selectBurger(){
+        return """
                Step 1-> Select burger: BASIC / DELUXE / CHEESEBURGER / CHICKEN / PORK
-               """);
+               """;
     }
 
-    public void selectExtraTopping(){
-        System.out.println("""
+    public String selectExtraTopping(){
+        return"""
                Step 2-> Select topping: ONIONS / BACON / TOMATO / MAYO / PESTO
-               """);
+               """;
     }
 
-    public void selectSides(){
-        System.out.println("""
+    public String selectSides(){
+        return"""
                Step 3-> Select side: SALAD / FRIES / ONION RINGS
-               """);
+               """;
     }
-    public void selectDrinks(){
-        System.out.println("""
+    public String selectDrinks(){
+        return"""
                Step 5-> Select Drinks: COLA / PEPSI / MIRINDA 
-               """);
+               """;
     }
-    public void selectSidesSize(){
-        System.out.println("""
+    public String selectSidesSize(){
+        return"""
                Step 4-> Select side size: SMALL / MEDIUM / LARGE
-               """);
+               """;
     }
 
-    public void selectDrinkSize(){
-        System.out.println("""
+    public String selectDrinkSize(){
+        return"""
                Step 2-> Select drink size: SMALL / MEDIUM 
-               """);
+               """;
     }
 
 

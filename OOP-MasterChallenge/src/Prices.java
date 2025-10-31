@@ -1,6 +1,6 @@
 public class Prices {
 
-    private double deluxeBruger = 51.00;
+    private double deluxeBruger = 50.00;
     private double Basic_burger  = 20.00;
     private double Cheeseburger = 35.00;
     private double Chicken_burger = 38.00;
