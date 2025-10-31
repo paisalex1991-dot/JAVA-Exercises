@@ -15,7 +15,6 @@ public class Burger extends MealOrder{
 
     Prices prices = new Prices();
 
-
     public Burger(String type){
         this.type = type.toUpperCase();
         //this.basePrice = 40.00;
@@ -69,6 +68,7 @@ public class Burger extends MealOrder{
     public String getType(){
         return this.type;
     }
+
 
 
 }
