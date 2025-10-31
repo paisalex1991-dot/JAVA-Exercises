@@ -1,5 +1,7 @@
 package dev.lpa;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main (String[] args){
@@ -18,15 +20,22 @@ public class Main {
         System.out.println("last element = " + firstTen[arrayLength - 1]);
 
         int[] newArray;
-        newArray = new int[]{5, 4, 3, 2, 1};
+         newArray = new int[]{5, 4, 3, 2, 1};
+        //newArray = new int[5];
 
         for (int i : newArray){ //  Take each element of newArray  Assign it to i  Run the loop body once for each value
             System.out.println(i + " ");
         }
 
-        for (int i=0; i< newArray.length; i++ ){
-            System.out.println(newArray[i] + " ");
-        }
+//        for (int i=0; i< newArray.length; i++ ){
+//            System.out.println(newArray[i] + " ");
+//        }
+
+        System.out.println(Arrays.toString(newArray));
+
+        Object[] objectArray = new Object[3];
+        objectArray[0] = "Hello";
+        objectArray[1] = new StringBuilder("World");
 
 
     }
