@@ -21,7 +21,7 @@ public class Main {
 
         for(i = 19; i >=  0; i--)
         {
-            System.out.print("%d ",firstArray[i]);
+            System.out.printf("%d ",firstArray[i]);
         }
 
     }
