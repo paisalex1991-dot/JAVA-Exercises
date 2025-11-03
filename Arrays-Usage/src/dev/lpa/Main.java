@@ -22,6 +22,24 @@ public class Main {
         int[] forthArray = Arrays.copyOf(thirdArray, thirdArray.length); //into forth array copies thirdArray - first thirdArray elements
         System.out.println(Arrays.toString(forthArray));
 
+        String[] sArray = {"Able", "Cain", "Noah", "joe", "Dan"};
+        Arrays.sort(sArray);
+        System.out.println(Arrays.toString(sArray));
+        if(Arrays.binarySearch(sArray, "joe") >= 0){
+            System.out.println("Found joe in the list");
+        }
+
+        int[] s1 = {1, 2, 3, 4, 5};
+        int[] s2 = {1, 2, 3, 4, 5, 0};
+
+        if(Arrays.equals(s1, s2)){
+            System.out.println("arrays are equal");
+        }
+        else{
+            System.out.println("arrays are Not equal");
+        }
+
+
 
     }
 
