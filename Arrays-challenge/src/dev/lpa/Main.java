@@ -8,18 +8,20 @@ public class Main {
     public static void main (String[] args){
 
         Random random = new Random();
+        int i = 0;
 
         int[] firstArray = new int[20];
 
-        for(int i = 0; i < 20; i++){
+        for(i = 0; i < 20; i++){
             firstArray[i] = random.nextInt(1000);
         }
         System.out.println(Arrays.toString(firstArray));
                 Arrays.sort(firstArray);
         System.out.println(Arrays.toString(firstArray));
-        for(int i = 19; i >= 0; i--);
+
+        for(i = 19; i >=  0; i--)
         {
-            System.out.print(firstArray[i]);
+            System.out.print("%d ",firstArray[i]);
         }
 
     }
