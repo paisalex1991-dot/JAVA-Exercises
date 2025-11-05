@@ -8,6 +8,12 @@ record GorceryItem(String name, String type, int count){
     public GorceryItem(String name){
         this (name, "DAIRY", 1);
     }
+
+    @Override
+    public String toString(){
+        return String.format("%d %s in %s", count, name.toLowerCase(), type);
+    }
+
 }
 
 public class Main {
@@ -26,6 +32,14 @@ public class Main {
 
         ArrayList<GorceryItem> groceryList = new ArrayList<>();
         groceryList.add(new GorceryItem("Butter"));
+        groceryList.add(new GorceryItem("milk"));
+        groceryList.add(new GorceryItem("orange", "PRODUCE", 5));
+        groceryList.add(0,
+                new GorceryItem("apples", "PRODUCE", 5)); //adds item at the start of the list
+        groceryList.set(0,
+                new GorceryItem("pears", "PRODUCE", 10)); //replace item at the start of the list
+        groceryList.remove(1); //removes second record from groceryList
+        System.out.println(groceryList);
 
     }
 }
