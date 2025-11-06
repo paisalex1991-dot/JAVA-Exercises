@@ -21,15 +21,15 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         while(flag){
-            var input = scanner.nextLine();
+            var input = scanner.nextLine().toUpperCase(); // no matter of the option it converts to upper case
             switch(input){
-                case "F", "Forward" -> Actions.moveForward(listOfPlaces);
-                case "B", "Backward" -> Actions.moveBackward(listOfPlaces);
-                case "A", "Add" -> Actions.addPlaces(listOfPlaces);
-                case "R", "Remove" -> Actions.removePlaces(listOfPlaces);
-                case "L", "List" -> Actions.listPlaces(listOfPlaces);
-                case "M", "Menu" -> Actions.seeMenu();
-                case "Q", "Quit" -> flag = false;
+                case "F", "FORWARD" -> Actions.moveForward(listOfPlaces);
+                case "B", "BACKWARD" -> Actions.moveBackward(listOfPlaces);
+                case "A", "ADD" -> Actions.addPlaces(listOfPlaces);
+                case "R", "REMOVE" -> Actions.removePlaces(listOfPlaces);
+                case "L", "LIST" -> Actions.listPlaces(listOfPlaces);
+                case "M", "MENU" -> Actions.seeMenu();
+                case "Q", "QUIT" -> flag = false;
                 default -> System.out.println("Wrong option!");
             };
             Actions.seeMenu();
