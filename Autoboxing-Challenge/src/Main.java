@@ -4,5 +4,6 @@ public class Main {
 
         Customer bob = new Customer("Bob s", 1000.0);
         System.out.println(bob);
+        
     }
 }

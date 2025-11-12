@@ -14,4 +14,13 @@ public class Customer {
         this(name.toUpperCase(), new ArrayList<Double>(500));
         transactions.add(initialDeposit);
     }
+
+    @Override
+    public String toString() {
+        return "Customer{name='" + name + "', transactions=" + transactions + "}";
+    }
+
+    public String getName(){
+        return name;
+    }
 }

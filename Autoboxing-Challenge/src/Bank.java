@@ -3,21 +3,40 @@ import java.util.ArrayList;
 public class Bank {
 
     private String name;
-    private ArrayList<Customer> customers;
+    private ArrayList<Customer> customers = new ArrayList<>(5000);
+
+
+    public Bank (String name){
+        this.name = name;
+    }
 
     public Bank (String name, ArrayList<Customer> customers){
         this.name = name;
         this.customers = customers;
     }
 
-    public void addCustomer(Customer customer){
 
-        if(customers.contains(customer)){
-            System.out.println("Client " + customer + "already exist in database" );
+   private Customer getCustomer(String customerName){
+
+        for(var customer : customers){
+            if(customer.getName().equalsIgnoreCase(customerName)){
+                return customer;
+            }
         }
-        else{
+
+        System.out.printf("Customer (%s) wasn't found %n", customerName);
+        return null;
+   }
+
+    public void addCustomer(String  customerName, double amountToAdd){
+
+        if(getCustomer(customerName) == null){
+            Customer customer = new Customer(customerName, amountToAdd);
             customers.add(customer);
+            System.out.println("New Cusotmer added : " +customer)
+
         }
+
     }
 
     public void addTransaction(Customer client){
