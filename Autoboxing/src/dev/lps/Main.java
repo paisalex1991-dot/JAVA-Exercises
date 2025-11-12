@@ -1,5 +1,8 @@
 package dev.lps;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Main {
 
     public static void main (String[] args){
@@ -17,6 +20,36 @@ public class Main {
         Double resultBoxed = getLiteralDoublePrimitive();
         double resultUnboxed = getDoubleObject();
 
+        Integer[] wrappedArray = new Integer[5];
+        wrappedArray[0] = 50;
+        System.out.println(Arrays.toString(wrappedArray));
+
+        System.out.println(wrappedArray[0].getClass().getName());
+
+        Character[] characterArray = {'a', 'b', 'c', 'd'};
+        System.out.println(Arrays.toString(characterArray));
+
+        var ourList = getList(1, 2, 3, 4, 5);
+        System.out.println(ourList);
+
+        }
+
+        private static ArrayList<Integer> getList(int... varargs){
+
+        ArrayList<Integer> aList = new ArrayList<>();
+        for (int i : varargs){
+            aList.add(i);
+        }
+        return aList;
+
+        }
+
+        private static int returnAnInt(Integer i){
+        return i;
+        }
+
+        private static Integer returnAnInteger(int i){
+        return i;
         }
 
         private static Double getDoubleObject(){
