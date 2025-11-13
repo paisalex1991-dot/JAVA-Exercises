@@ -1,6 +1,9 @@
 public class PC extends ProductForSale{
 
 
+    public PC(String type, Double price, String description) {
+        super(type, price, description);
+    }
 
     @Override
     public void showDetails() {
